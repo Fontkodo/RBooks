@@ -264,7 +264,6 @@ book_sentiment_ratio <- function(id) {
   )
 }
 
-print(str_glue("The Devil's Dictionary: ", as.character(book_sentiment_ratio(972))))
 print(str_glue("Music Notation and Terminology: ", as.character(book_sentiment_ratio(19499))))
 print(str_glue("The Gourmet's Guide to Europe: ", as.character(book_sentiment_ratio(18854))))
 print(str_glue("The Plattsburg Manual: ", as.character(book_sentiment_ratio(19552))))
@@ -272,6 +271,6 @@ print(str_glue("Celebrated Crimes: ", as.character(book_sentiment_ratio(2760))))
 print(str_glue("The Mechanical Properties of Wood: ", as.character(book_sentiment_ratio(12299))))
 ```
 
-The values achieved by these works imply that our prior suspicions have some merit. The work with the highest ratio is The Devil's Dictionary, which, while nonfiction, is full of satirical language, which increases the absolute sentiment score. Unsurprisingly, Celebrated Crimes also places high. Arranging the remaining works in order of decreasing sentiment shows a pattern of increasing technicality.
+The values achieved by these works imply that our prior suspicions have some merit. Unsurprisingly, Celebrated Crimes places high, due to its inherently dark subject matter. Arranging the remaining works in order of decreasing sentiment shows a pattern of increasing technicality.
 
 The conclusion that can be drawn from these observations is that low sentiment ratios are a potential indicator of technicality, but are not sufficient to detect nonfiction as a whole. A potential supplement would be examining the sentiment over time to potentially catch any works that slip through the cracks. However, even this combined method is not perfect, due to the wide variety of styles a work could potentially be in.

@@ -449,10 +449,7 @@ book_sentiment_ratio &lt;- function(id) {
   )
 }
 
-print(str_glue(&quot;The Devil's Dictionary: &quot;, as.character(book_sentiment_ratio(972))))</code></pre>
-<pre><code>## Joining, by = &quot;word&quot;</code></pre>
-<pre><code>## The Devil's Dictionary: 0.0851340668028197</code></pre>
-<pre class="r"><code>print(str_glue(&quot;Music Notation and Terminology: &quot;, as.character(book_sentiment_ratio(19499))))</code></pre>
+print(str_glue(&quot;Music Notation and Terminology: &quot;, as.character(book_sentiment_ratio(19499))))</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
 <pre><code>## Music Notation and Terminology: 0.0304315134299678</code></pre>
 <pre class="r"><code>print(str_glue(&quot;The Gourmet's Guide to Europe: &quot;, as.character(book_sentiment_ratio(18854))))</code></pre>
@@ -467,7 +464,7 @@ print(str_glue(&quot;The Devil's Dictionary: &quot;, as.character(book_sentiment
 <pre class="r"><code>print(str_glue(&quot;The Mechanical Properties of Wood: &quot;, as.character(book_sentiment_ratio(12299))))</code></pre>
 <pre><code>## Joining, by = &quot;word&quot;</code></pre>
 <pre><code>## The Mechanical Properties of Wood: 0.0403175809451433</code></pre>
-<p>The values achieved by these works imply that our prior suspicions have some merit. The work with the highest ratio is The Devil’s Dictionary, which, while nonfiction, is full of satirical language, which increases the absolute sentiment score. Unsurprisingly, Celebrated Crimes also places high. Arranging the remaining works in order of decreasing sentiment shows a pattern of increasing technicality.</p>
+<p>The values achieved by these works imply that our prior suspicions have some merit. Unsurprisingly, Celebrated Crimes places high, due to its inherently dark subject matter. Arranging the remaining works in order of decreasing sentiment shows a pattern of increasing technicality.</p>
 <p>The conclusion that can be drawn from these observations is that low sentiment ratios are a potential indicator of technicality, but are not sufficient to detect nonfiction as a whole. A potential supplement would be examining the sentiment over time to potentially catch any works that slip through the cracks. However, even this combined method is not perfect, due to the wide variety of styles a work could potentially be in.</p>
 
 
